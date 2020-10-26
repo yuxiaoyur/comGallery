@@ -1,0 +1,14 @@
+{
+    "code": 200,
+    "message": "获取成功",
+    "data":{
+        "list":[
+            {"code":8596,"name":"测试xxx公司","reson":"安全事故","gist":"《食品安全....》","time":"2018-9-10","people":"王五","content":"食品安全"},
+            {"code":8596,"name":"测试xxx公司","reson":"安全事故","gist":"《食品安全....》","time":"2018-9-10","people":"王五","content":"食品安全"},
+            {"code":8596,"name":"测试xxx公司","reson":"安全事故","gist":"《食品安全....》","time":"2018-9-10","people":"王五","content":"食品安全"},
+            {"code":8596,"name":"测试xxx公司","reson":"安全事故","gist":"《食品安全....》","time":"2018-9-10","people":"王五","content":"食品安全"},
+            {"code":8596,"name":"测试xxx公司","reson":"安全事故","gist":"《食品安全....》","time":"2018-9-10","people":"王五","content":"食品安全"}
+        ],
+        "total":20
+    } 
+}

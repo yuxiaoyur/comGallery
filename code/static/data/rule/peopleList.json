@@ -1,0 +1,14 @@
+{
+    "code": 200,
+    "message": "获取成功",
+    "data":{
+        "list":[
+            {"code":"C24","name":"房地产领域相关失信责任主体","field":"房地产领域相关失信责任主体","verifyStatus":1,"position":"法人","time":"2018/5/17"},
+            {"code":"C6","name":"测试生产经营严重失信者","field":"测试生产经营严重失信者","verifyStatus":1,"position":"法人","time":"2018/5/17"},
+            {"code":"C29","name":"测试xxx公司","field":"测试XXXX公司主体","verifyStatus":0,"position":"法人","time":"2018-6-7"},
+            {"code":"C20","name":"失信企业及其法定代表人（负责人）","field":"失信企业及其法定代表人（负责人）","verifyStatus":1,"position":"法人","time":"2018/5/17"},
+            {"code":"C29","name":"测试xxx公司","field":"测试XXXX公司主体","verifyStatus":0,"position":"法人","time":"2018-6-7"}
+        ],
+        "total":8
+    } 
+}

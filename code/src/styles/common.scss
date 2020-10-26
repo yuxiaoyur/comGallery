@@ -1,0 +1,53 @@
+@font-face {
+    font-family: fontPmzd;
+    src: url("../assets/fonts/庞门正道标题体.ttf");
+}
+
+.con-fpmzd {
+    font-family: fontPmzd;
+}
+
+@font-face {
+    font-family: fontHei;
+    src: url("../assets/fonts/时尚中黑简体.ttf");
+}
+
+.con-fhei {
+    font-family: fontHei;
+}
+
+.con-back122 {
+    background-color: #456d44;
+}
+
+.con-pad10 {
+    padding: 10px;
+}
+
+.con-0ff {
+    color: #fff;
+}
+
+.con-mar20{
+    margin-top: 20px;
+}
+
+.con-title-box{
+    border: 1px solid #ebeef5;
+    background-color: #456d44;
+    color: #303133;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 4px;
+    padding: 5px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-content {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}

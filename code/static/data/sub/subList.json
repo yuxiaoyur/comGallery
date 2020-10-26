@@ -1,0 +1,14 @@
+{
+    "code": 200,
+    "message": "获取成功",
+    "data":{
+        "list":[
+            {"code":"C24","name":"苏州市佳盛网络科技有限公司","field":"91320585560302699G","verifyStatus":1,"nameStatus":1,"position":"法人","time":"2018/5/17"},
+            {"code":"C20","name":"测试xxx失信企业","field":"91320585560302699G","verifyStatus":1,"nameStatus":1,"position":"法人","time":"2018/5/17"},
+            {"code":"C6","name":"测试xxx生产经营者","field":"91320585560302699G","verifyStatus":1,"nameStatus":1,"position":"法人","time":"2018/5/17"},
+            {"code":"C29","name":"测试xxx公司","field":"91320585560302699G","verifyStatus":0,"nameStatus":0,"position":"法人","time":"2018-6-7"},
+            {"code":"C29","name":"测试xxx公司","field":"91320585560302699G","verifyStatus":0,"nameStatus":0,"position":"法人","time":"2018-6-7"}
+        ],
+        "total":8
+    } 
+}

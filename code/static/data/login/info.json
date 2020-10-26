@@ -1,0 +1,57 @@
+{
+    "code": 200,
+    "message": "操作成功",
+    "data": {
+        "roles": [
+            "TEST"
+        ],
+        "icon": "http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/images/20180607/timg.jpg",
+        "menus": [
+            {
+                "id": 1,
+                "parentId":0,
+                "createTime": "2020-02-02T06:50:36.000+0000",
+                "title": "json编辑",
+                "level": 0,
+                "sort": 0,
+                "name": "jsonEditor",
+                "icon": "icon-article",
+                "hidden": 0
+            },
+            {
+                "id": 2,
+                "parentId": 0,
+                "createTime": "2020-02-02T06:50:36.000+0000",
+                "title": "Echart",
+                "level": 0,
+                "sort": 0,
+                "name": "echart",
+                "icon": "icon-article",
+                "hidden": 0
+            },
+            {
+                "id": 3,
+                "parentId":2,
+                "createTime": "2020-02-02T06:50:36.000+0000",
+                "title": "柱图",
+                "level": 1,
+                "sort": 0,
+                "name": "bar",
+                "icon": "icon-article",
+                "hidden": 0
+            },
+            {
+                "id": 4,
+                "parentId":2,
+                "createTime": "2020-02-02T06:50:36.000+0000",
+                "title": "折线图",
+                "level": 1,
+                "sort": 0,
+                "name": "line",
+                "icon": "icon-article",
+                "hidden": 0
+            }
+        ],
+        "username": "admin"
+    }
+}

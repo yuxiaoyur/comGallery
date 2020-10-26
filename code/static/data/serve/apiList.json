@@ -1,0 +1,14 @@
+{
+    "code": 200,
+    "message": "获取成功",
+    "data":{
+        "list":[
+            {"code":"C24","name":"红名单比对","use":"测试","ressult":0,"record":3,"time":"2018/5/17"},
+            {"code":"C20","name":"测试xxx比对","use":"测试","ressult":0,"record":3,"time":"2018/5/17"},
+            {"code":"C6","name":"测试xxx比对","use":"测试","ressult":0,"record":3,"time":"2018/5/17"},
+            {"code":"C29","name":"测试xxx比对","use":"测试","ressult":0,"record":3,"time":"2018-6-7"},
+            {"code":"C29","name":"测试xxx比对","use":"测试","ressult":0,"record":3,"time":"2018-6-7"}
+        ],
+        "total":8
+    } 
+}

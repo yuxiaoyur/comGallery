@@ -1,0 +1,17 @@
+{
+    "code": 200,
+    "message": "获取成功",
+    "data":{
+        "list":[
+            {"code":"1","name":"横向柱图","pic":"barline"},
+            {"code":"2","name":"柱图折线图","pic":"barline"},
+            {"code":"3","name":"横向柱图","pic":"barline"},
+            {"code":"4","name":"柱图折线图","pic":"barline"},
+            {"code":"5","name":"横向柱图","pic":"barline"},
+            {"code":"6","name":"柱图折线图","pic":"barline"},
+            {"code":"7","name":"横向柱图","pic":"barline"},
+            {"code":"8","name":"柱图折线图","pic":"barline"}
+        ],
+        "total":10
+    } 
+}
