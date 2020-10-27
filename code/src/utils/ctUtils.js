@@ -5,5 +5,5 @@ Utils.ceshi = function(){
 };
 
 Utils.urlString=".json";
-
+Utils.urlString=".json";
 export default Utils
