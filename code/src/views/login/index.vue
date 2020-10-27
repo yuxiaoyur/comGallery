@@ -146,6 +146,7 @@
 
   .login-title {
     text-align: center;
+    color: #409EFF;
   }
 
   .login-center-layout {
