@@ -64,6 +64,12 @@ export const asyncRouterMap = [
       component: () => import('@/views/echart/line/index'),
       meta: { title: '折线图', icon: 'product-brand' },
       hidden: true
+    },{
+      path: 'editor',
+      name: 'editor',
+      component: () => import('@/views/echart/editor/index'),
+      meta: { title: '折线图', icon: 'product-brand' },
+      hidden: true
     }]
   },
   { path: '*', redirect: '/404', hidden: true }

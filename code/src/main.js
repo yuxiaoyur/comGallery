@@ -30,6 +30,11 @@ import '@/permission' // permission control
 import XLSX from 'xlsx'
 Vue.use(XLSX)
 
+// 导入codemirror
+import VueCodeMirror from 'vue-codemirror'
+import 'codemirror/lib/codemirror.css'
+Vue.use(VueCodeMirror)
+
 Vue.use(ElementUI, { locale })
 Vue.use(VCharts)
 

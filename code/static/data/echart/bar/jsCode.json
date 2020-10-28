@@ -1,0 +1,7 @@
+{
+    "code": 200,
+    "message": "获取成功",
+    "data":{
+        "list":"Utils.ceshi = function(){console.log(111)};"
+    } 
+}

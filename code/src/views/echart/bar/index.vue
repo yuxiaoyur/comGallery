@@ -48,12 +48,16 @@
           v-for="item in list"
           :key="item.code"
           class="bar-card"
-          @click="handleCardPage(item)"
         >
-          <el-card shadow="hover" :body-style="{ padding: '0px' }">
-            <img :src="item.url" class="bar-image" />
-            <div style="padding: 14px; text-align: center">
-              <span>{{ item.name }}</span>
+          <el-card
+            shadow="hover"
+            :body-style="{ padding: '0px' }"
+          >
+            <div  @click="handleCardPage(item)">
+              <img :src="item.url" class="bar-image" />
+              <div style="padding: 14px; text-align: center">
+                <span>{{ item.name }}</span>
+              </div>
             </div>
           </el-card>
         </el-col>
@@ -68,8 +72,9 @@
         layout="total, sizes,prev, pager, next,jumper"
         :current-page.sync="listQuery.pageNum"
         :page-size="listQuery.pageSize"
-        :page-sizes="[5,10,15]"
-        :total="total">
+        :page-sizes="[5, 10, 15]"
+        :total="total"
+      >
       </el-pagination>
     </div>
   </div>
@@ -91,7 +96,7 @@ export default {
     return {
       listQuery: Object.assign({}, defaultListQuery),
       list: [],
-      total:null,
+      total: null,
     };
   },
 
@@ -112,8 +117,7 @@ export default {
     // 获取List
     handleGetList() {
       fetchList(this.listQuery).then((response) => {
-        console.log(response);
-        this.total=response.data.total;
+        this.total = response.data.total;
         this.list = response.data.list;
         this.list.map((item, index) => {
           item.url = require("@/assets/images/bar/" + item.pic + ".png");
@@ -121,33 +125,36 @@ export default {
       });
     },
     // 分页
-    handleSizeChange(val){
+    handleSizeChange(val) {
       this.listQuery.pageNum = 1;
       this.listQuery.pageSize = val;
       this.handleGetList();
     },
-    handleCurrentChange(val){
+    handleCurrentChange(val) {
       this.listQuery.pageNum = val;
       this.handleGetList();
     },
 
     // 进入界面
-    handleCardPage(val){
-      // this.router.push()
-    }
+    handleCardPage(val) {
+      this.$router.push({
+        name:"editor",
+        params:{code:val.code}
+      })
+    },
   },
 };
 </script>
 
 <style rel="stylesheet/scss" lang="scss"  scoped>
-  .bar-container {
-    .bar-card {
-      margin-top: 10px;
-      cursor: pointer;
-      .bar-image {
-        width: 100%;
-        height: 120px;
-      }
+.bar-container {
+  .bar-card {
+    margin-top: 10px;
+    cursor: pointer;
+    .bar-image {
+      width: 100%;
+      height: 120px;
     }
   }
+}
 </style>
