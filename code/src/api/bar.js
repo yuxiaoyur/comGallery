@@ -30,3 +30,13 @@ export function fetchJsCode(code) {
   })
 }
 
+export function fetchJsCodeUtils(code) {
+  return request({
+    url: '/data/echart/bar/jsCodeUtils',
+    method: 'POST',
+    data: {
+        code
+    }
+  })
+}
+

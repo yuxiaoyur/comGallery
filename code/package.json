@@ -18,6 +18,7 @@
     "file-saver": "^2.0.2",
     "js-cookie": "^2.2.0",
     "json-editor": "^0.7.28",
+    "jsonlint": "^1.6.3",
     "normalize.css": "^8.0.0",
     "nprogress": "^0.2.0",
     "v-charts": "^1.19.0",

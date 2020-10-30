@@ -1,0 +1,7 @@
+{
+    "code": 200,
+    "message": "获取成功",
+    "data": {
+        "list": "function funChartLiquidFill(params){let{ELEM,SESDATA,CENTER=['60%','50%'],RADIUS=\"78%\",COLOR=\"#00fcfd\",BACKCOLOR=\"#02515d\",BWIDTH=2,BTYPE=\"dashed\"}=paramsif($(\"#\"+ELEM).length>0){letchart=echarts.init(document.getElementById(ELEM));commonObj.echart.push(chart);varoption={series:[{type:'liquidFill',radius:RADIUS,center:CENTER,data:[{value:SESDATA,itemStyle:{normal:{color:BACKCOLOR}}}],backgroundStyle:{borderWidth:2,borderColor:COLOR,color:'#1c233f',},label:{normal:{formatter:(SESDATA*100).toFixed(1)+'%',textStyle:{color:COLOR,insideColor:COLOR,fontFamily:\"digital\",fontSize:commonObj.baseFS*1.66,}}},outline:{itemStyle:{borderWidth:BWIDTH,borderColor:COLOR,borderType:BTYPE,}},}]};chart.clear();chart.setOption(option);}}"
+    }
+}
