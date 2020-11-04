@@ -37,13 +37,13 @@
           size="small"
           label-width="140px"
         >
-          <el-form-item label="接口环境" prop="apiOptions">
+          <el-form-item label="接口环境" prop="env">
             <el-select
-              v-model="listQuery.apiOptions"
+              v-model="listQuery.env"
               placeholder="请选择接口环境"
             >
               <el-option
-                v-for="item in apiOptions"
+                v-for="item in env"
                 :key="item.value"
                 :label="item.label"
                 :value="item.value"
@@ -51,13 +51,13 @@
               </el-option>
             </el-select>
           </el-form-item>
-          <el-form-item label="接口模块" prop="apiModule">
+          <el-form-item label="接口模块" prop="db">
             <el-select
-              v-model="listQuery.apiModule"
+              v-model="listQuery.db"
               placeholder="请选择接口模块"
             >
               <el-option
-                v-for="item in apiModule"
+                v-for="item in db"
                 :key="item.value"
                 :label="item.label"
                 :value="item.value"
@@ -67,7 +67,7 @@
           </el-form-item>
           <el-form-item label="输入搜索">
             <el-input
-              v-model="listQuery.id"
+              v-model="listQuery.path"
               class="input-width"
               placeholder="请输入接口"
             ></el-input>
@@ -98,9 +98,9 @@ import vueJsonEditor from "vue-json-editor";
 import { fetchList, editList } from "@/api/jsonEdit";
 
 const defaultListQuery = {
-  id: "",
-  apiOptions: "pro",
-  apiModule: "cd_jjtj",
+  path: "",
+  env: "pro",
+  db: "cd_jjtj",
 };
 
 export default {
@@ -113,12 +113,12 @@ export default {
 
       listQuery: Object.assign({}, defaultListQuery),
 
-      apiOptions: [
+      env: [
         { label: "正式环境", value: "pro" },
         { label: "测试环境", value: "test" },
       ],
 
-      apiModule: [
+      db: [
         { label: "社会诉求", value: "cd_mssq" },
         { label: "经济运行", value: "cd_jjtj" },
         { label: "社会管理", value: "cd_shgl" },
@@ -126,6 +126,8 @@ export default {
         { label: "市场监管", value: "cd_scjg" },
         { label: "公共服务", value: "cd_ggfw" },
       ],
+
+      editList:{}
     };
   },
 
@@ -157,7 +159,9 @@ export default {
     // 获取jSON
     handleGetList() {
       fetchList(this.listQuery).then((response) => {
-        this.json = response;
+        console.log(response)
+        this.editList=response.data;
+        this.json = response.data.config;
       });
     },
 
@@ -168,7 +172,9 @@ export default {
         cancelButtonText: "取消",
         type: "warning",
       }).then(() => {
-        editList({ test: this.json }).then((response) => {
+        
+        this.editList.config=this.json
+        editList(this.editList).then((response) => {
           this.$message({
             message: "修改成功",
             type: "success",

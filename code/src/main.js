@@ -25,6 +25,8 @@ Vue.prototype.$utils = Utils
 
 import '@/permission' // permission control
 
+import mao from '@/chart/store/index.js'
+console.log(mao)
 
 // 导入excel表
 import XLSX from 'xlsx'
